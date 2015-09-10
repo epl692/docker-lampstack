@@ -13,7 +13,7 @@ docker build -t <yourname>/lampstack .
 
 Or, alternately, build DIRECTLY from the github repo like some sort of SUPER FUTURISTIC FLYING CAR MECHANIC:
 ```
-docker build -t <yourname>/lampstack git://github.com/jbfink/docker-lampstack.git
+docker build -t <yourname>/lampstack git://github.com/epl692/docker-lampstack.git
 ```
 
 Then run it! Woo! 
