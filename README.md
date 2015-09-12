@@ -27,3 +27,5 @@ Check docker logs after running to see MySQL root password, as so
 ```
 echo $(docker logs <container-id> | sed -n 1p)
 ```
+
+Also, MySQL password can be automatically filled into config files by pasting 'MYSQL_PASSWORD' where the password should be.

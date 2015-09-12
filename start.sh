@@ -11,7 +11,7 @@ killall mysqld
 	 cd /var/www/html/
      for fl in *.*; do
      mv $fl $fl.old
-     sed 's/MYSQL_PASSWORD/$MYSQL_PASSWORD/g' $fl.old > $fl
+     sed "s/MYSQL_PASSWORD/$MYSQL_PASSWORD/g" $fl.old > $fl
      rm -f $fl.old
      done
 sleep 10s
