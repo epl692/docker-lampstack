@@ -10,4 +10,6 @@ ADD ./supervisord.conf /etc/supervisord.conf
 RUN chmod 755 /start.sh
 RUN chmod 755 /etc/apache2/foreground.sh
 EXPOSE 80 443
+RUN rm -rf /var/www/html/*
+ADD ./www/ /var/www/html/
 CMD ["/bin/bash", "/start.sh"]
