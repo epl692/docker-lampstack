@@ -10,4 +10,4 @@ ADD ./supervisord.conf /etc/supervisord.conf
 RUN chmod 755 /start.sh
 RUN chmod 755 /etc/apache2/foreground.sh
 EXPOSE 80
-CMD ["/bin/bash", "/start.sh"]
+CMD ["-p 80:80", "/bin/bash", "/start.sh"]
