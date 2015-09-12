@@ -9,5 +9,5 @@ ADD ./foreground.sh /etc/apache2/foreground.sh
 ADD ./supervisord.conf /etc/supervisord.conf
 RUN chmod 755 /start.sh
 RUN chmod 755 /etc/apache2/foreground.sh
-EXPOSE 80
-CMD ["-p 80:80", "/bin/bash", "/start.sh"]
+EXPOSE 80 443
+CMD ["/bin/bash", "/start.sh"]
