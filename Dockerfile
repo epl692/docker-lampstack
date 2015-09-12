@@ -12,4 +12,5 @@ RUN chmod 755 /etc/apache2/foreground.sh
 EXPOSE 80 443
 RUN rm -rf /var/www/html/*
 ADD ./www/ /var/www/html/
+VOLUME ["/var/www/"]
 CMD ["/bin/bash", "/start.sh"]
